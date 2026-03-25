@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Django stuff
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Static files (if collected)
+staticfiles/
+
+# Media uploads (optional, if not needed in repo)
+media/
+
+# Environment variables
+.env
+.env.*
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Migrations (optional - usually keep them)
+# */migrations/*
+# !*/migrations/__init__.py
+
+# pytest / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# mypy / type checkers
+.mypy_cache/
+
+# node (if using frontend tools)
+node_modules/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# logs
+*.log
