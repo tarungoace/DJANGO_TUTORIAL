@@ -1,15 +1,11 @@
-from . import views
 from django.urls import path
+from . import views
 
+app_name = 'startdj_app_viewproject_blog'
 
-urlpatters = [
-
-   path('', views.home, name='home'),
-   path('admin/',  views.admin.site.urls),
-   path('about/', views.about, name='about'),
-   path('contact/', views.contact, name='contact'),
-
-
+urlpatterns = [
+    path('', views.home, name='home'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
 ]
-
 
