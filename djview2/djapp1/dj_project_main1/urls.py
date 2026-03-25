@@ -1,5 +1,5 @@
 """
-URL configuration for djapp1 project.
+URL configuration for startdj-app-viewproject-blog project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from startdj_app_viewproject_blog.views import about, contact, home
+# from startdj_app_viewproject_blog.view import home
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home, name='home'),
+    path('about/', about, name='about'),
+    path('contact/', contact, name='contact'),
 ]
